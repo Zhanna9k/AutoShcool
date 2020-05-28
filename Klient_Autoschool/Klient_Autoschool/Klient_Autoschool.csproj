@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ED4C86F0-42B7-4FA5-9607-3E22D8AAED12}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Klient_Autoschool</RootNamespace>
+    <AssemblyName>Klient_Autoschool</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="FastReport">
+      <HintPath>..\..\..\..\Paper program\Paper новый\Full Bins\Framework 4.0\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Arhiv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Arhiv.Designer.cs">
+      <DependentUpon>Arhiv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Autoschool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autoschool.Designer.cs">
+      <DependentUpon>Autoschool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Config.cs" />
+    <Compile Include="Groop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Groop.Designer.cs">
+      <DependentUpon>Groop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriyaAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KategoriyaAdd.Designer.cs">
+      <DependentUpon>KategoriyaAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kategoriya.Designer.cs">
+      <DependentUpon>Kategoriya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OGroop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OGroop.Designer.cs">
+      <DependentUpon>OGroop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ouchenik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ouchenik.Designer.cs">
+      <DependentUpon>Ouchenik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OZhachet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OZhachet.Designer.cs">
+      <DependentUpon>OZhachet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="o_programe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="o_programe.Designer.cs">
+      <DependentUpon>o_programe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sotrudniki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sotrudniki.Designer.cs">
+      <DependentUpon>Sotrudniki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SotrudnikiAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SotrudnikiAdd.Designer.cs">
+      <DependentUpon>SotrudnikiAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UchenikAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UchenikAdd.Designer.cs">
+      <DependentUpon>UchenikAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vhod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vhod.Designer.cs">
+      <DependentUpon>Vhod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Zachet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Zachet.Designer.cs">
+      <DependentUpon>Zachet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Arhiv.resx">
+      <DependentUpon>Arhiv.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Autoschool.resx">
+      <DependentUpon>Autoschool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Groop.resx">
+      <DependentUpon>Groop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KategoriyaAdd.resx">
+      <DependentUpon>KategoriyaAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kategoriya.resx">
+      <DependentUpon>Kategoriya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OGroop.resx">
+      <DependentUpon>OGroop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ouchenik.resx">
+      <DependentUpon>Ouchenik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OZhachet.resx">
+      <DependentUpon>OZhachet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="o_programe.resx">
+      <DependentUpon>o_programe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sotrudniki.resx">
+      <DependentUpon>Sotrudniki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SotrudnikiAdd.resx">
+      <DependentUpon>SotrudnikiAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UchenikAdd.resx">
+      <DependentUpon>UchenikAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vhod.resx">
+      <DependentUpon>Vhod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Zachet.resx">
+      <DependentUpon>Zachet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentedit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Archive.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapmarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\start.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mapmarker1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1mapmarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2mapmarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documentedit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Логотип.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
